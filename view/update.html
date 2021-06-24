@@ -1,0 +1,42 @@
+<div class="p-3 border bg-light text-center">
+  <h2>Update Product</h2>
+  <hr />
+  <div
+    class="alert alert-success"
+    role="alert"
+    style="display: none"
+    id="success"
+  ></div>
+  <div
+    class="alert alert-danger"
+    role="alert"
+    style="display: none"
+    id="danger"
+  ></div>
+  <div class="d-flex justify-content-center">
+    <form>
+      <div class="mb-3">
+        <label for="product" class="form-label">Product</label>
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="product"
+          ;
+        >
+          <option selected>Select one product</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="cantidad" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="cantidad" />
+      </div>
+      <button
+        type="submit"
+        class="btn btn-success"
+        onclick="enviarActualizar()"
+      >
+        Update
+      </button>
+    </form>
+  </div>
+</div>
